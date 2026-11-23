@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INKAIA S.A.C. | Ingeniería, ConTech &amp; Fondo Editorial</title>
-  <meta name="description" content="INKAIA S.A.C. (RUC 20614781531) — Ingeniería Civil, Metodologías BIM, Automatización ConTech, Proyectos I+D+i y Fondo Editorial Científico en Cusco, Perú." />
+  <title>Inkaia Tech (INKAIA S.A.C.) | AI-Native ConTech &amp; Physical AI</title>
+  <meta name="description" content="Inkaia Tech (INKAIA S.A.C., RUC 20614781531) — AI-Native ConTech, Physical AI, Automated Engineering Intelligence, BIM 5D &amp; Scientific Publishing in Peru." />
   <style>
     :root {
       --bg: #0b0f17;
@@ -39,7 +39,7 @@
     }
     .nav {
       display: flex; align-items: center; justify-content: space-between;
-      height: 68px;
+      height: 68px; gap: 16px;
     }
     .brand {
       display: flex; align-items: center; gap: 10px;
@@ -52,6 +52,14 @@
     }
     .nav-links { display: flex; gap: 24px; font-size: 0.94rem; color: var(--muted); }
     .nav-links a:hover { color: var(--text); }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .lang-btn {
+      background: var(--bg-card); color: var(--text);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 8px 12px; font-size: 0.84rem; font-weight: 700;
+      cursor: pointer; transition: border-color 0.15s ease;
+    }
+    .lang-btn:hover { border-color: var(--accent); }
     .btn {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 11px 20px; border-radius: 10px; font-weight: 600; font-size: 0.94rem;
@@ -74,11 +82,11 @@
     h1 {
       font-size: clamp(2.1rem, 4.4vw, 3.4rem);
       line-height: 1.12; letter-spacing: -0.02em;
-      max-width: 820px; margin-bottom: 18px;
+      max-width: 840px; margin-bottom: 18px;
     }
     .hero p {
       color: var(--muted); font-size: 1.1rem;
-      max-width: 680px; margin-bottom: 30px;
+      max-width: 700px; margin-bottom: 30px;
     }
     .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
 
@@ -90,13 +98,13 @@
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: var(--radius); padding: 18px 20px;
     }
-    .metric strong { display: block; font-size: 1.35rem; color: var(--accent); }
+    .metric strong { display: block; font-size: 1.28rem; color: var(--accent); }
     .metric span { font-size: 0.86rem; color: var(--muted); }
 
     /* Sections */
     section { padding: 64px 0; border-top: 1px solid var(--border); }
     .section-title { font-size: 1.85rem; margin-bottom: 10px; }
-    .section-sub { color: var(--muted); margin-bottom: 34px; max-width: 680px; }
+    .section-sub { color: var(--muted); margin-bottom: 34px; max-width: 700px; }
 
     .grid-3 {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -132,6 +140,7 @@
     }
     .legal-row:last-child { border-bottom: none; }
     .legal-row span { color: var(--muted); }
+    .link-accent { color: #6ee7b7; text-decoration: underline; text-underline-offset: 3px; }
 
     footer {
       border-top: 1px solid var(--border);
@@ -150,95 +159,93 @@
     <div class="container nav">
       <a href="#" class="brand">
         <span class="brand-badge">IN</span>
-        <span>INKAIA S.A.C.</span>
+        <span>Inkaia Tech</span>
       </a>
       <nav class="nav-links">
-        <a href="#servicios">Divisiones</a>
-        <a href="#soluciones">ConTech &amp; I+D+i</a>
-        <a href="#identidad">Datos Corporativos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#productos" data-es="Plataforma IA" data-en="AI Platform">Plataforma IA</a>
+        <a href="#servicios" data-es="Divisiones" data-en="Divisions">Divisiones</a>
+        <a href="#identidad" data-es="Datos Corporativos" data-en="Company Info">Datos Corporativos</a>
+        <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
       </nav>
-      <a href="#contacto" class="btn btn-primary">Contactar</a>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-btn" type="button" aria-label="Switch language">EN</button>
+        <a href="#contacto" class="btn btn-primary" data-es="Contactar" data-en="Contact Us">Contactar</a>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero" style="border-top:none;">
       <div class="container">
-        <span class="pill">RUC 20614781531 · Cusco, Perú · Ingeniería, ConTech &amp; Edición Científica</span>
-        <h1>Ingeniería Civil, Automatización ConTech y Publicación Técnica de Alto Rigor.</h1>
-        <p>
-          <strong>INKAIA Sociedad Anónima Cerrada</strong> integra control paramétrico de costos,
-          metodologías BIM, desarrollo de software técnico e investigación aplicada para proyectos de
-          infraestructura pública, privada y académica en el Perú.
+        <span class="pill" data-es="Inkaia Tech · INKAIA S.A.C. (RUC 20614781531) · Cusco, Perú" data-en="Inkaia Tech · INKAIA S.A.C. (Tax ID 20614781531) · Peru">Inkaia Tech · INKAIA S.A.C. (RUC 20614781531) · Cusco, Perú</span>
+        <h1 data-es="Inteligencia Artificial Aplicada a Ingeniería Civil, ConTech y Physical AI." data-en="Applied AI for Civil Engineering, ConTech &amp; Physical AI.">Inteligencia Artificial Aplicada a Ingeniería Civil, ConTech y Physical AI.</h1>
+        <p data-es="Inkaia Tech (INKAIA S.A.C.) desarrolla sistemas inteligentes para auditoría paramétrica de costos, laboratorios normados (NTP/ASTM/ACI), trazabilidad industrial (Physical AI) y edición científica de alto rigor." data-en="Inkaia Tech (INKAIA S.A.C.) builds AI-native software for automated quantity takeoffs, normative materials testing (ASTM/ACI), industrial Physical AI traceability, and technical publishing.">
+          <strong>Inkaia Tech (INKAIA S.A.C.)</strong> desarrolla sistemas inteligentes para auditoría paramétrica de costos, laboratorios normados (NTP/ASTM/ACI), trazabilidad industrial (Physical AI) y edición científica de alto rigor.
         </p>
         <div class="hero-actions">
-          <a href="#servicios" class="btn btn-primary">Explorar Divisiones</a>
-          <a href="#identidad" class="btn btn-outline">Ficha Corporativa &amp; RUC</a>
+          <a href="#productos" class="btn btn-primary" data-es="Explorar Plataforma IA" data-en="Explore AI Platform">Explorar Plataforma IA</a>
+          <a href="https://jorgeduenas.me" target="_blank" rel="noopener" class="btn btn-outline" data-es="Perfil del Fundador" data-en="Founder Profile">Perfil del Fundador</a>
         </div>
 
         <div class="metrics">
           <div class="metric">
+            <strong>ConTech AI</strong>
+            <span data-es="Auditoría de metrados, costos y BIM 5D con LLMs" data-en="LLM-powered quantity takeoffs &amp; BIM 5D auditing">Auditoría de metrados, costos y BIM 5D con LLMs</span>
+          </div>
+          <div class="metric">
+            <strong>Physical AI &amp; IoT</strong>
+            <span data-es="Trazabilidad industrial, balance de masas y DPP" data-en="Industrial traceability, mass balance &amp; Digital Passports">Trazabilidad industrial, balance de masas y DPP</span>
+          </div>
+          <div class="metric">
+            <strong>CivilLab 3D</strong>
+            <span data-es="Simuladores WebGL y validación normativa ASTM/ACI" data-en="WebGL lab simulators &amp; ASTM/ACI compliance">Simuladores WebGL y validación normativa ASTM/ACI</span>
+          </div>
+          <div class="metric">
             <strong>RUC 20614781531</strong>
-            <span>Activa y Habida · SUNARP Partida 11058926</span>
-          </div>
-          <div class="metric">
-            <strong>CIIU 7110 / 5811</strong>
-            <span>Ingeniería, Consultoría &amp; Fondo Editorial</span>
-          </div>
-          <div class="metric">
-            <strong>REMYPE + Ley 29973</strong>
-            <span>Microempresa acreditada · Empresa Promocional PCD</span>
-          </div>
-          <div class="metric">
-            <strong>ConTech &amp; Physical AI</strong>
-            <span>Python, BIM 5D, Geotecnia y Ensayos Normados</span>
+            <span data-es="INKAIA S.A.C. · Activa y Habida · SUNARP 11058926" data-en="INKAIA S.A.C. · Incorporated in Peru (SUNARP 11058926)">INKAIA S.A.C. · Activa y Habida · SUNARP 11058926</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="servicios">
+    <section id="productos">
       <div class="container">
-        <h2 class="section-title">Divisiones Operativas</h2>
-        <p class="section-sub">
-          Tres líneas especializadas que articulan ingeniería de infraestructura, transformación digital y producción editorial certificada.
+        <h2 class="section-title" data-es="Productos de IA y Tecnología Propia" data-en="Core AI Products &amp; Technology">Productos de IA y Tecnología Propia</h2>
+        <p class="section-sub" data-es="Arquitectura orientada a eliminar errores humanos en ingeniería de infraestructura, control de calidad en laboratorio y procesos productivos." data-en="AI-first engineering systems designed to eliminate manual errors across infrastructure cost auditing, materials testing, and industrial operations.">
+          Arquitectura orientada a eliminar errores humanos en ingeniería de infraestructura, control de calidad en laboratorio y procesos productivos.
         </p>
 
-        <div class="grid-3">
+        <div id="servicios" class="grid-3">
           <article class="card">
-            <span class="card-tag">División 01 · Ingeniería &amp; BIM</span>
-            <h3>Consultoría de Obras, Costos y Geotecnia</h3>
-            <p>Control técnico-económico de proyectos de inversión pública y privada bajo normativa peruana vigente.</p>
+            <span class="card-tag" data-es="Producto 01 · ConTech AI" data-en="Product 01 · ConTech AI">Producto 01 · ConTech AI</span>
+            <h3 data-es="Auditoría Inteligente de Metrados, BIM y Costos" data-en="AI Quantity Takeoff, BIM &amp; Cost Auditing">Auditoría Inteligente de Metrados, BIM y Costos</h3>
+            <p data-es="Agentes multimodales y motores en Python para detectar inconsistencias en presupuestos, metrados y expedientes técnicos." data-en="Multimodal agents and Python validation engines that detect inconsistencies in construction budgets, BOQs, and BIM models.">Agentes multimodales y motores en Python para detectar inconsistencias en presupuestos, metrados y expedientes técnicos.</p>
             <ul>
-              <li>Metrados estructurados, valorizaciones y presupuestos</li>
-              <li>Modelado BIM y trazabilidad bajo ISO 19650</li>
-              <li>Análisis geotécnico y estabilidad de taludes</li>
-              <li>Soporte técnico para contrataciones estatales (Ley 32069)</li>
+              <li data-es="Detección automática de ajustes manuales y errores de arrastre" data-en="Automated detection of manual overrides and formula drift">Detección automática de ajustes manuales y errores de arrastre</li>
+              <li data-es="Trazabilidad BIM bajo estándar ISO 19650" data-en="BIM traceability aligned with ISO 19650">Trazabilidad BIM bajo estándar ISO 19650</li>
+              <li data-es="Análisis geotécnico y estabilidad de taludes asistido por IA" data-en="AI-assisted geotechnical &amp; slope stability analysis">Análisis geotécnico y estabilidad de taludes asistido por IA</li>
             </ul>
           </article>
 
           <article class="card" id="soluciones">
-            <span class="card-tag">División 02 · ConTech &amp; I+D+i</span>
-            <h3>Software Técnico, Automatización e IA</h3>
-            <p>Herramientas digitales orientadas a eliminar errores manuales en laboratorio, obra y gestión pública.</p>
+            <span class="card-tag" data-es="Producto 02 · Physical AI &amp; Simulación" data-en="Product 02 · Physical AI &amp; Simulation">Producto 02 · Physical AI &amp; Simulación</span>
+            <h3 data-es="CivilLab WebGL &amp; Trazabilidad Industrial" data-en="CivilLab WebGL &amp; Industrial Physical AI">CivilLab WebGL &amp; Trazabilidad Industrial</h3>
+            <p data-es="Simuladores virtuales 3D de ensayos de materiales y capa analítica con sensores para trazabilidad textil e industrial." data-en="Interactive 3D/WebGL materials testing simulators and sensor-driven analytics for industrial mass-balance &amp; traceability.">Simuladores virtuales 3D de ensayos de materiales y capa analítica con sensores para trazabilidad textil e industrial.</p>
             <ul>
-              <li>Sistemas de cálculo normativo NTP / ASTM / ACI</li>
-              <li>Automatización de flujos y bases de datos (Python / SQL)</li>
-              <li>Formulación técnica de proyectos I+D+i (PROCIENCIA / ProInnóvate)</li>
-              <li>Integración IoT / Physical AI para control de calidad</li>
+              <li data-es="Cálculo normativo automatizado (NTP / ASTM / ACI)" data-en="Automated compliance validation (ASTM / ACI / NTP)">Cálculo normativo automatizado (NTP / ASTM / ACI)</li>
+              <li data-es="Pasaporte Digital de Producto (DPP) y balance de masas" data-en="Digital Product Passport (DPP) &amp; mass-balance telemetry">Pasaporte Digital de Producto (DPP) y balance de masas</li>
+              <li data-es="Pipelines de datos en Python, SQL y automatización API" data-en="Python, SQL, and API-driven telemetry pipelines">Pipelines de datos en Python, SQL y automatización API</li>
             </ul>
           </article>
 
           <article class="card">
-            <span class="card-tag">División 03 · CIIU 5811</span>
-            <h3>Fondo Editorial INKAIA</h3>
-            <p>Sello editorial registrado ante la Agencia Peruana del ISBN para obras científicas, académicas y técnicas.</p>
+            <span class="card-tag" data-es="División 03 · CIIU 5811" data-en="Division 03 · Publishing (ISIC 5811)">División 03 · CIIU 5811</span>
+            <h3 data-es="Fondo Editorial INKAIA" data-en="INKAIA Scientific Publishing">Fondo Editorial INKAIA</h3>
+            <p data-es="Sello editorial registrado ante la Agencia Peruana del ISBN para obras científicas, académicas y manuales de ingeniería." data-en="Registered technical &amp; academic publisher (ISBN Agency) focused on civil engineering, geotechnics, and applied AI.">Sello editorial registrado ante la Agencia Peruana del ISBN para obras científicas, académicas y manuales de ingeniería.</p>
             <ul>
-              <li>Edición de libros técnicos y textos universitarios</li>
-              <li>Arbitraje externo por pares ciegos documentado</li>
-              <li>Gestión de ISBN y Depósito Legal ante la BNP</li>
-              <li>Maquetación, hoja de créditos y tiraje técnico</li>
+              <li data-es="Edición de libros técnicos y textos universitarios" data-en="Engineering textbooks and technical monographs">Edición de libros técnicos y textos universitarios</li>
+              <li data-es="Arbitraje externo por pares ciegos documentado" data-en="Documented double-blind peer review workflow">Arbitraje externo por pares ciegos documentado</li>
+              <li data-es="Gestión de ISBN y Depósito Legal ante la BNP" data-en="ISBN registration &amp; legal deposit compliance">Gestión de ISBN y Depósito Legal ante la BNP</li>
             </ul>
           </article>
         </div>
@@ -247,31 +254,32 @@
 
     <section id="identidad">
       <div class="container">
-        <h2 class="section-title">Identidad Jurídica y Contacto</h2>
-        <p class="section-sub">
-          Información oficial verificable para registros de proveedores, plataformas tecnológicas y alianzas institucionales.
+        <h2 class="section-title" data-es="Identidad Jurídica y Liderazgo" data-en="Corporate Identity &amp; Leadership">Identidad Jurídica y Liderazgo</h2>
+        <p class="section-sub" data-es="Información oficial verificable para programas de startups, proveedores tecnológicos y alianzas institucionales." data-en="Verified corporate and leadership details for startup programs, cloud partners, and institutional alliances.">
+          Información oficial verificable para programas de startups, proveedores tecnológicos y alianzas institucionales.
         </p>
 
         <div class="split">
           <div class="legal-box">
-            <h3 style="margin-bottom:14px;">Datos Registrales</h3>
-            <div class="legal-row"><span>Razón Social</span><strong>INKAIA SOCIEDAD ANÓNIMA CERRADA</strong></div>
-            <div class="legal-row"><span>RUC</span><strong>20614781531</strong></div>
-            <div class="legal-row"><span>Partida Registral</span><strong>N.° 11058926 (SUNARP Sicuani)</strong></div>
-            <div class="legal-row"><span>Actividad Principal</span><strong>7110 · Arquitectura e Ingeniería</strong></div>
-            <div class="legal-row"><span>Actividad Secundaria</span><strong>5811 · Edición de Libros</strong></div>
-            <div class="legal-row"><span>Gerencia General</span><strong>Ing. Jorge Luis Dueñas Ttito (CIP 390758)</strong></div>
+            <h3 style="margin-bottom:14px;" data-es="Datos Registrales" data-en="Corporate Registry">Datos Registrales</h3>
+            <div class="legal-row"><span data-es="Razón Social" data-en="Legal Name">Razón Social</span><strong>INKAIA SOCIEDAD ANÓNIMA CERRADA</strong></div>
+            <div class="legal-row"><span data-es="RUC" data-en="Tax ID (RUC)">RUC</span><strong>20614781531</strong></div>
+            <div class="legal-row"><span data-es="Partida Registral" data-en="Registry Record">Partida Registral</span><strong>N.° 11058926 (SUNARP)</strong></div>
+            <div class="legal-row"><span data-es="Actividades" data-en="Activities">Actividades</span><strong>CIIU 7110 · 5811</strong></div>
+            <div class="legal-row"><span data-es="Fundador &amp; CEO" data-en="Founder &amp; CEO">Fundador &amp; CEO</span><strong><a class="link-accent" href="https://jorgeduenas.me" target="_blank" rel="noopener">Ing. Jorge Luis Dueñas Ttito (CIP 390758)</a></strong></div>
+            <div class="legal-row"><span data-es="Portafolio Personal" data-en="Founder Website">Portafolio Personal</span><strong><a class="link-accent" href="https://jorgeduenas.me" target="_blank" rel="noopener">jorgeduenas.me</a></strong></div>
           </div>
 
           <div class="legal-box" id="contacto">
-            <h3 style="margin-bottom:14px;">Canales Oficiales</h3>
-            <div class="legal-row"><span>Domicilio Legal</span><strong>Sicuani, Canchis — Cusco, Perú</strong></div>
-            <div class="legal-row"><span>Teléfono / WhatsApp</span><strong>+51 929 096 096</strong></div>
-            <div class="legal-row"><span>Correo Electrónico</span><strong>jorgeluisduenast@gmail.com</strong></div>
-            <div class="legal-row"><span>LinkedIn</span><strong><a href="https://www.linkedin.com/in/contech-peru" target="_blank" rel="noopener">linkedin.com/in/contech-peru</a></strong></div>
-            <div class="legal-row"><span>GitHub</span><strong><a href="https://github.com/ContechPeru" target="_blank" rel="noopener">github.com/ContechPeru</a></strong></div>
+            <h3 style="margin-bottom:14px;" data-es="Canales Oficiales" data-en="Official Channels">Canales Oficiales</h3>
+            <div class="legal-row"><span data-es="Sede" data-en="Headquarters">Sede</span><strong>Cusco, Perú</strong></div>
+            <div class="legal-row"><span data-es="Teléfono / WhatsApp" data-en="Phone / WhatsApp">Teléfono / WhatsApp</span><strong>+51 929 096 096</strong></div>
+            <div class="legal-row"><span data-es="Correo Corporativo" data-en="Corporate Email">Correo Corporativo</span><strong><a class="link-accent" href="mailto:contacto@inkaia.tech">contacto@inkaia.tech</a></strong></div>
+            <div class="legal-row"><span data-es="Fundador" data-en="Founder Email">Fundador</span><strong><a class="link-accent" href="mailto:jorge.duenas@inkaia.tech">jorge.duenas@inkaia.tech</a></strong></div>
+            <div class="legal-row"><span>LinkedIn</span><strong><a class="link-accent" href="https://www.linkedin.com/in/contech-peru" target="_blank" rel="noopener">linkedin.com/in/contech-peru</a></strong></div>
+            <div class="legal-row"><span>GitHub</span><strong><a class="link-accent" href="https://github.com/ContechPeru" target="_blank" rel="noopener">github.com/ContechPeru</a></strong></div>
             <div style="margin-top:20px;">
-              <a href="mailto:jorgeluisduenast@gmail.com?subject=Contacto%20Corporativo%20INKAIA%20S.A.C." class="btn btn-primary">Enviar Correo Directo</a>
+              <a href="mailto:contacto@inkaia.tech?subject=Inkaia%20Tech%20%E2%80%94%20Corporate%20Inquiry" class="btn btn-primary" data-es="Enviar Correo Corporativo" data-en="Send Corporate Email">Enviar Correo Corporativo</a>
             </div>
           </div>
         </div>
@@ -281,8 +289,28 @@
 
   <footer>
     <div class="container">
-      © 2026 INKAIA S.A.C. (RUC 20614781531) · Todos los derechos reservados · Sicuani, Cusco, Perú.
+      <span data-es="© 2026 Inkaia Tech · INKAIA S.A.C. (RUC 20614781531) · Todos los derechos reservados · Cusco, Perú." data-en="© 2026 Inkaia Tech · INKAIA S.A.C. (Tax ID 20614781531) · All rights reserved · Cusco, Peru.">© 2026 Inkaia Tech · INKAIA S.A.C. (RUC 20614781531) · Todos los derechos reservados · Cusco, Perú.</span>
     </div>
   </footer>
+
+  <script>
+    (function () {
+      const btn = document.getElementById("langToggle");
+      let current = "es";
+
+      function applyLang(lang) {
+        current = lang;
+        document.documentElement.lang = lang;
+        btn.textContent = lang === "es" ? "EN" : "ES";
+        document.querySelectorAll("[data-es][data-en]").forEach((el) => {
+          el.textContent = el.getAttribute("data-" + lang);
+        });
+      }
+
+      btn.addEventListener("click", () => {
+        applyLang(current === "es" ? "en" : "es");
+      });
+    })();
+  </script>
 </body>
 </html>
